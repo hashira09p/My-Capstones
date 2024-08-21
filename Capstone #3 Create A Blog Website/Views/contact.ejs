@@ -1,0 +1,37 @@
+<% if(locals.email && locals.password){%>
+  <%- include("partials/headerThatLogged.ejs") %>
+  <% } else { %>
+    <%- include("partials/header.ejs") %>
+    <% } %>
+    
+    <main class="container">
+        <div class="bg-body-tertiary p-5 rounded">
+          <h1>Contact Us</h1>
+          <p class="lead">We're here to help! Whether you have questions, feedback, or need support, feel free to get in touch with us. Here are the ways you can reach us:</p>
+          
+          <h1>Email Us</h1>
+          <p class="lead">For general inquiries: <br>
+            📧 General Support: pchub@gmail.com <br>
+            📧 Partnerships: pchubpartnerships@gmail.com</p>
+
+          <h1>Call Us</h1>
+          <p class="lead">Prefer to speak with someone directly? Give us a call: <br>
+            📞 Customer Support: +1 (800) 123-4567 <br> 
+            📞 Sales Department: +1 (800) 234-5678</p>
+
+          <h1>Visit Us</h1>
+          <p class="lead">Come by our office or send us mail: <br>
+            🏢 Head Office: <br>
+            123 Sampaloc Road, Rodriguez <br>
+            Manila City, Rizal, 1860 <br>
+            Philippines</p>  
+
+          <h1>Our Working Hours</h1>
+          <p class="lead">Our Working Hours <br>
+            Monday - Friday: 9:00 AM - 6:00 PM <br>
+            Saturday: 10:00 AM - 2:00 PM <br>
+            Sunday: Closed</p> 
+          
+        </div>
+    </main>
+<%- include("partials/footer.ejs") %>

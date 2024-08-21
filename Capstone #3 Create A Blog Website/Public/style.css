@@ -1,0 +1,257 @@
+.brand-container{
+    position: relative;
+    top: .2rem;
+}
+.navigation-links{
+    position: relative;
+    left: -6.8rem;
+}
+.nav-link{
+    position: relative;
+    
+}
+
+.nav-link::after{
+    content: " ";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    left: 10px;
+    bottom: 10px;
+    transition: .3s;
+}
+
+.nav-link:hover::after{
+    width: 83%;
+}
+
+.log-and-signout-container{
+    position: relative;
+    left: 6.9rem;
+}
+
+.btn-outline-secondary{
+    border:  transparent;
+    position: relative;
+    left: 5px;
+}
+
+.px-4{
+    position: relative;
+    top: -5rem;
+}
+
+.description-header{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 800;
+    text-align: start;
+    font-size: 1.9rem;
+}
+
+
+.description-container{
+    position: relative;
+    top: -18rem;
+    left: -10rem;
+}
+
+.description-p{
+    font-family: "Playfair Display", serif;
+    width: 60rem;
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: justify;
+    color: white;
+}
+
+.recent-post-header{
+    position: relative;
+    top: -19rem;
+}
+
+.recent-post-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 550px 550px;
+    row-gap: 60px;
+    column-gap: 30px;
+    position: relative;
+    top: -15rem;
+}
+
+.description h1{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 100;
+    margin: 8px 5px;
+
+}
+
+.description p{
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 5px;
+    word-spacing: 5px;
+    
+}
+
+.profile{
+    height: 3rem;
+    width: 3rem;
+    margin: 0px 5px;
+    position: relative;
+    top: 2.4rem;
+    left: 1rem;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.username{
+    display: inline-block;
+    position: relative;
+    top: 2.6rem;
+    left: 1rem;
+}
+
+.profile-container{
+    position: relative;
+    top: -2.5rem;
+    left: -1.6rem;
+}
+
+.img-adjust{                 /* Adjusting Image in each grid*/
+    height: 16.5rem;
+}
+
+.profile-adjust-2{
+    position: relative;     /* Adjusting profile in grid #2*/   
+    top: .6rem;
+}
+
+.username-2{
+    position: relative;     /* Adjusting username in grid #2*/
+    top: 1rem;
+}
+
+.profile-adjust-3{
+    position: relative;     /* Adjusting profile in grid #3*/   
+    top: 2.5rem;
+}
+
+.username-3{
+    position: relative;     /* Adjusting username in grid #3*/
+    top: 2.5rem;
+}
+
+.profile-adjust-4{
+    position: relative;     /* Adjusting profile in grid #4*/   
+    top:3.8rem;
+}
+
+.username-4{
+    position: relative;     /* Adjusting username in grid #4*/
+    top: 3.8rem;
+}
+
+.profile-adjust-5{
+    position: relative;     /* Adjusting profile in grid #5*/   
+    top: 3.8rem;
+}
+
+.username-5{
+    position: relative;     /* Adjusting username in grid #5*/
+    top: 3.9rem;
+}
+
+.profile-adjust-6{
+    position: relative;     /* Adjusting profile in grid #6*/   
+    top: 3.8rem;
+}
+
+.username-6{
+    position: relative;     /* Adjusting username in grid #6*/
+    top: 3.9rem;
+}
+
+.card:hover{
+    cursor: pointer;
+    background-color: rgb(236, 230, 230);
+    box-shadow: 0px 10px 10px rgb(174, 174, 174);
+}
+
+.text-end{
+    width: 3rem;
+    height: 3.5rem;
+    z-index: 2;
+}
+.profile-pic{                 /* profile picture of account user */
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    right: .5rem;
+    top: .8rem;
+    border-radius: 50px;
+}
+
+.text-end:hover .menu-container{  
+    display: block;
+}
+
+
+.menu-container{
+    height: 6rem;
+    width: 115px;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    position: absolute;
+    top: 5rem;
+    right: 5.5rem;
+    box-shadow: 5px 5px 15px rgb(129, 129, 129);
+    display: none;
+}   
+
+
+.menu{
+    max-width: 6rem;
+    border-radius: 20px;
+    position: relative;
+    left: 0.6rem;
+    top: 1rem;
+    
+}
+.bi-gear-fill{
+    position: relative;
+    left: -.5rem;
+}
+
+.bi-box-arrow-right{
+    position: relative;
+    left: -.5rem;
+}
+
+.logo-name{
+    font-size: 1rem;
+    display: inline-block;
+    position: relative;
+    right: .5rem;
+}
+
+.logo-name a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.settings-container:hover {
+    border-radius: 20px;
+    background-color: rgb(221, 221, 221);
+    cursor: pointer;
+}
+
+.log-out-container:hover {
+    border-radius: 20px;
+    background-color: rgb(221, 221, 221);
+    cursor: pointer;
+}

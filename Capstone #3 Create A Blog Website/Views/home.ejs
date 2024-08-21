@@ -1,0 +1,98 @@
+
+<% if(locals.email && locals.password){%>
+  <%- include("partials/headerThatLogged.ejs") %>
+  <% } else { %>
+    <%- include("partials/header.ejs") %>
+    <% } %>
+
+
+    <section>
+          <div class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4 " src="Images/white-pc.jpg" alt="" width="1100" height="500">
+            
+            <div class="col-lg-6 mx-auto description-container">
+              <p class="description-p">Stay up-to-date with the newest developments in the PC world, including hardware releases, software updates, and industry trends.</p>
+            </div>
+          </div>
+    </section>
+    
+    <section class="container">
+
+      <h1 class="recent-post-header">Recent Post</h1>
+
+      <div class="recent-post-container">
+        <div class="card" style="width: 100%;">
+          <img src="Images/security.jpg" class="card-img-top img-adjust" alt="Lock with techonology background">
+          <div class="card-body">
+            <h5 class="card-title">ESET Home Security Premium review: Simple protection with a complex heart</h5>
+            <p class="card-text">ESET's antivirus software gives far more control over scan and feature settings than the average rival — a plus for power users — without being intimidating.</p>
+            <div class="profile-container">
+              <img src="Images/daddy.jpg" alt="daddy" class="profile">
+              <p class="username"><i>@nocturnal_daddy022</i></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 100%;">
+          <img src="Images/audio.jpg" class="card-img-top img-adjust" alt="microphone">
+          <div class="card-body">
+            <h5 class="card-title">How to record audio files with Windows 11</h5>
+            <p class="card-text">The audio recorder was introduced in Windows 11 as a replacement for the previous Voice Recorder program. It enables audio recordings via integrated microphones or headsets. <br> <br></p>
+            <div class="profile-container">
+              <img src="Images/studentGirl.jpg" alt="kids that bullying the young girl" class="profile profile-adjust-2">
+              <p class="username username-2"><i>@Artistic-Cup-5501</i></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 100%;">
+          <img src="Images/anti-virus.jpg" class="card-img-top img-adjust" alt="anti-virus">
+          <div class="card-body">
+            <h5 class="card-title">Best antivirus software 2024: Keep your PC safe from malware and spyware.</h5>
+            <p class="card-text">Your Windows PC needs virus protection. Some threats can’t be avoided without the aid of antivirus software. Choose the best antivirus software for you from our top picks.</p>
+            <div class="profile-container">
+              <img src="Images/single.jpg" alt="siggle daddy inside the car" class="profile profile-adjust-3">
+              <p class="username username-3"><i>@somedude-83</i></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 100%;">
+          <img src="Images/windows11.jpg" class="card-img-top img-adjust" alt="windows 11">
+          <div class="card-body">
+            <h5 class="card-title">Windows 11 gets an updated Microsoft Store with better app control.</h5>
+            <p class="card-text">Microsoft is testing a revised version of the Microsoft Store on Windows 11. Here's what's changed.</p>
+            <div class="profile-container">
+              <img src="Images/nurseWithGlasses.jpg" alt="nurse with glasses" class="profile profile-adjust-4">
+              <p class="username username-4"><i>@deleted_nurse</i></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 100%;">
+          <img src="Images/intel.jpg" class="card-img-top img-adjust" alt="picture of intel company">
+          <div class="card-body">
+            <h5 class="card-title">Intel: Fixes for Core CPU voltage bug won't hurt performance</h5>
+            <p class="card-text">Intel's internal tests while fixing the voltage bug in 13th- and 14th-gen Core chips show that its patch won't hurt performance in most cases.</p>
+            <div class="profile-container">
+              <img src="Images/animeProfile.jpg" alt="Girl anime" class="profile profile-adjust-5">
+              <p class="username username-5"><i>@xington</i></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 100%;">
+          <img src="Images/laptop.jpg" class="card-img-top img-adjust" alt="Netflix in TV">
+          <div class="card-body">
+            <h5 class="card-title">Best laptops for video editing 2024: Work faster with these expert picks</h5>
+            <p class="card-text">Need to cut video fast? We name the best laptops for the task based on performance and available features.</p>
+            <div class="profile-container">
+              <img src="Images/deku.jpg" alt="Deku anime" class="profile profile-adjust-6">
+              <p class="username username-6"><i>@Ok-Inspection-5865</i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<%- include("partials/footer.ejs") %>

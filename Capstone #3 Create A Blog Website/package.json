@@ -1,0 +1,18 @@
+{
+  "name": "capstone-2",
+  "version": "1.0.0",
+  "description": "Building My Capstone 2",
+  "main": "home.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jerome Abelida",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4"
+  }
+}

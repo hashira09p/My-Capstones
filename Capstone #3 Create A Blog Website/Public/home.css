@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 100vh;
+}
+
+.header{
+    height: 4rem;
+}
+
+.brand-container {
+    display: inline-block;
+    
+}
+
+.brand-logo{
+    width: 5rem;
+    height: 5rem;
+}
+
+.brand-name{
+    font-family: "Playfair Display", serif;
+    font-size: 2.8rem;
+    display: inline;
+    position: relative;
+    top: -1rem
+}
+
+.navigation-container{
+    margin: auto;
+    height: 5vh;
+    width: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: auto;
+    position: relative;
+    top: -3.1rem;
+    right: -2.4rem;
+   
+}
+
+.navigation-container a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: black;
+    position: relative;
+}
+
+.navigation-container a::after{
+    content: " ";
+    position: absolute;
+    background-color: black;
+    width: 0%;
+    height: 3px;
+    top: 25px;
+    left: -1px;
+    transition: 0.3s;
+}
+
+.navigation-container a:hover::after{
+    width: 100%;
+}
+
+.login-container{
+    float: right;
+    width: 30vh;
+    position: relative;
+    top: -6.2rem;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.login-container button{
+    height: 3rem;
+    width: 9rem;
+    display: inline-block;
+    border: 0px solid transparent;
+    background-color: transparent;  
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
+    border-radius: 10px;
+    z-index: 1;
+    
+}
+
+.login{
+    color: white;
+    cursor: pointer;
+}
+
+.signup{
+    transition: .3s;
+}
+
+.hover-effect{
+    height: 3rem;
+    width: 7rem;
+    display: inline-block;
+    background-color: black;
+    z-index: 0;
+    position: absolute;
+    right: 7rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.signup:hover +.hover-effect{
+    transform: translate(110px);
+}
+
+.signup:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.login:hover + .signup{
+    color: white;
+}
+ 
+.recent-post-header{
+    font-family: "Playfair Display", serif;
+    position: relative;
+    left: 1rem;
+}
+
+.girls{
+    width: 96rem;
+    height: 40rem;
+    position: absolute;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.hero-container{
+    position: relative;
+    top: 2rem;
+    height: 45rem;
+}
+
+
+
+.hero-description h1{
+    font-family: "Lilita One", sans-serif;
+    font-size: 5rem;
+    margin: 30px 0px;
+}
+
+.hero-description p{
+    
+    font-size: 2rem;
+}
+
+.hero-description{
+    z-index: 1;
+    position: relative;
+    top: 23rem;
+    left: 4.2rem;
+    width: 50rem;
+}
+
+.recent-post-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 550px 550px;
+    row-gap: 60px;
+    column-gap: 30px;
+    position: relative;
+    left: .5rem;
+}
+
+.image-container{
+    background-color: rgb(228, 228, 228);
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.description{
+    position: relative;
+    text-align: justify;
+    height: 150px;
+}
+
+.description h1{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 100;
+    margin: 8px 5px;
+
+}
+
+.description p{
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 5px;
+    word-spacing: 5px;
+    
+}
+
+.inside-image{
+    height: 17rem;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 12px  rgb(180, 180, 180);;
+}
+
+.profile{
+    height: 3rem;
+    width: 3rem;
+    margin: 0px 5px;
+    position: relative;
+    top: 2.4rem;
+    left: 1rem;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.username{
+    display: inline-block;
+    position: relative;
+    top: 1.2rem;
+    left: 1rem;
+}
+
+.footer-container{
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 10rem;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.footer-container h1{
+    color: white;
+    font-size: 4rem;
+    font-family: "Playfair Display", serif;
+}

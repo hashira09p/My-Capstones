@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Lobster&family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&display=swap');
+
+body{
+    margin: 0;
+    height: 1385px;
+}
+.header-main-container{    /* Header */
+    background-color: #f3ecde;
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 0;
+}
+
+.navigation-main-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.brand-logo-container{
+    display: inline-block;
+}
+
+.logo{
+    height: 5rem;
+    width: 5rem;
+}
+
+.brand-name{
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    top: -1.7rem;
+}
+
+
+.navigation-container{
+    float: right;
+    display: inline-block;
+    position: relative;
+    right: 3rem;
+    height: 5.4rem;
+} 
+
+.navigation{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    z-index: 0;
+    
+}
+
+.navigation li{
+    display: inline-block;
+    height: 5.3rem;
+    font-size: 1.5rem;
+    font-family: "Cantarell", sans-serif;
+    padding: 0 5px 0 5px;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    
+    
+}
+
+.contact-me{
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    left: 1rem;
+    font-family: "Cantarell", sans-serif;
+    width: 10rem;
+    text-align: center;
+    background-color: #DDBEA9;
+    border-radius: 20px;
+    transition: .6s;
+}
+
+.menu-icon{
+    display: none;
+}
+.navigation li:hover{
+    background-color: #B7B7A4;
+    cursor: pointer;
+}
+
+.contact-me:hover{
+    width: 12rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.introduction-container{  
+    background-color: #ecddfe; /* Introduction Section */
+    border-bottom: 1px solid black;
+}
+
+.introduction{ 
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction img{
+    width: 24rem;
+    height: 27rem;
+    margin: 5rem;
+    border-radius:50px;
+}
+
+.self-intro h1{
+    font-family: "Crimson Text", serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.self-intro p{
+    font-family: "Abel", sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.self-intro{
+    padding: 5rem;
+}
+
+.self-intro button{
+    background-color: #DDBEA9;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.aprroach-main-container{    /*Approach Section*/
+    height: 30rem;
+    width: 100%;
+    background-color: #FFE8D6;
+    border-bottom: 2px solid black;
+}
+
+.approach img{
+    height: 30rem;
+    width: 35rem;
+}
+
+.approach-container{
+    display: flex;
+}
+
+.aprroach-sentences{
+    padding: 2rem;
+    align-content: center;
+}
+
+.aprroach-sentences h1{
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.aprroach-sentences p{
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+.achievements-main-container{    /*Achievements Section*/
+    height: 11rem;
+    width: 100%;
+    background-color: #0a182a;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    z-index: 1;
+}
+
+.achievements-container{
+    display: flex;
+    justify-content: center;
+    height: 11rem;
+    
+}
+
+.achievements-container div{
+    padding: 2rem;
+}
+.star{
+    display: inline-block;
+}
+
+.star img{
+    width: 5rem;
+    position: relative;
+    left: 2.1rem;
+}
+
+.star p{
+    color: white;
+}
+
+.heart img{
+    width: 5rem;
+    position: relative;
+    left: 5.1rem;
+}
+
+.heart h1{
+    color: white;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.heart p{
+    color: white;
+    margin: 0;
+}
+
+.verified img{
+    width: 5rem;
+    position: relative;
+    left: 4rem;
+}
+
+
+
+.verified p{
+    color: white;
+    margin: 0;
+}
+
+.footer-main-container{    /*Footer*/
+    height: 13rem;
+    width: 100%;
+    background-color: #ecddfe;
+    z-index: -1;
+    position: relative;
+    top: -3rem;
+    margin: 0;
+}
+
+.end-logo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 6rem;
+}
+
+.ending-logo{
+    height: 5rem;
+    width: 5rem;
+}
+
+.end-brand-name{
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    margin: 0;
+    position: relative;
+    top: 2rem;
+}
+
+.invisible-menu{ /*hidden*/
+    height: 100%;
+    background-color: #f3ecde;
+    display: none;
+}
+
+.invisible-menu div{
+    height: 15%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.invisible-menu div:hover{
+    color: #B7B7A4;
+}

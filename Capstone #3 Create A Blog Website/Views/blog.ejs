@@ -1,0 +1,59 @@
+<% if(locals.email && locals.password){%>
+    <%- include("partials/headerThatLogged.ejs") %>
+    <% } else { %>
+      <%- include("partials/header.ejs") %>
+      <% } %>
+
+      <% var date = new Date();%>
+
+      <section class="post-section"> 
+        <div class="post-container">
+          <h1>Blog Posts</h1>
+          <form action="/submit" method="POST" class="form">
+            <div class="input-container">
+              <input type="text" class="title" name="title" placeholder="Title">
+              <textarea name="postDescription" class="comment" placeholder="What's on your mind..."></textarea>
+
+              <input type="submit" class="submit" value="Post">
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <% if(locals.headerTitle && locals.postDescription){ %>
+
+
+      <section class="users-post-section">
+        <div class="posts-of-users-container">
+          <div class="post">
+            <div class="profile-and-username-container">
+              <img src="Images/profile.jpg" alt="picture of boy studying" class="profile-pic-of-uploader">
+              <h6 class="username-uploader"> @Hashira</h6>
+              <h6 class="date-and-time"> <%= date %></h6>
+              <div class="dropdown">
+                <a class="btn btn-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ...
+                </a>
+              
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/edit">Edit</a></li>
+                  <li><a class="dropdown-item" href="/delete">Delete</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="title-and-description-container">
+              <h1 class="post-title"><%= headerTitle %></h1>
+              <p class="post-description"> <%= postDescription %>
+              </p>
+            </div>   
+          </div>
+        </div>
+      </section>
+
+      <% } %>
+
+
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>

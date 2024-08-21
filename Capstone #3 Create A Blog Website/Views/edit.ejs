@@ -1,0 +1,24 @@
+<% if(locals.email && locals.password){%>
+    <%- include("partials/headerThatLogged.ejs") %>
+    <% } else { %>
+      <%- include("partials/header.ejs") %>
+    <% } %>
+
+
+      <section class="post-section"> 
+        <div class="post-container">
+          <h1>Edit Post</h1>
+          <form action="/done" method="POST" class="form">
+            <div class="input-container">
+              <input type="text" class="title" name="title" placeholder="Title" value="<%= headerTitle %>">
+              <textarea name="postDescription" class="comment" placeholder="What's on your mind..." ><%= postDescription %></textarea>
+
+              <input type="submit" class="submit" value="Done">
+            </div>
+          </form>
+        </div>
+      </section>
+
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>

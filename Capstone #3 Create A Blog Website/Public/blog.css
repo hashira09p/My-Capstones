@@ -1,0 +1,121 @@
+.post-section{
+    position: relative;
+}
+.post-container{
+    position: relative;
+
+}
+
+.post-container h1{
+    position: relative;
+    left: 5.4rem;
+}
+
+.form{
+    display: flex;
+    justify-content: center;   
+}
+
+.title{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 68rem;
+    height: 3rem;
+    border-radius:15px;
+}
+
+.comment{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 68rem;
+    height: 10rem;
+    border-radius:15px;
+}
+
+.submit{
+    float: right;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(50, 43, 255);
+}
+
+
+
+
+.post{                             /*This section is uploaded posts */
+    position: relative;
+    left: 5.5rem;    
+    border: 1px solid black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 68rem;
+    height: 20rem;
+    border-radius: 20px;
+}
+
+
+
+.profile-pic-of-uploader{
+    height: 2.4rem;
+    width: 2.4rem;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    border-radius: 50px;
+}
+
+
+
+.username-uploader{
+    position: relative;
+    left: 4.5rem;
+    top: 1rem;
+}
+
+.date-and-time{
+    position: relative;
+    left: 4.5rem;
+    top: .8rem;
+    font-size: .7rem;
+}
+
+.dropdown{
+    float: right;
+    position: relative;
+    top: -2.5rem;
+    border-radius: 50 px;
+    background-color: white;
+    right: 2rem;
+}
+
+.title-and-description-container{   /*title and description*/
+    max-width: 65.5rem;
+    position: relative;
+    height: 14rem;
+    top: 1.3rem;
+    margin: auto;
+    overflow-y: scroll;
+    
+    
+}
+
+.post-title{
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+}
+
+.post-description{
+    max-width: 65.5rem;
+    height: 12rem;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    text-align: justify;
+    
+}
+
+

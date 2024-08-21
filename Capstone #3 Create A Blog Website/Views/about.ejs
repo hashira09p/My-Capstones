@@ -1,0 +1,30 @@
+<% if(locals.email && locals.password){%>
+  <%- include("partials/headerThatLogged.ejs") %>
+  <% } else { %>
+    <%- include("partials/header.ejs") %>
+    <% } %>
+
+    <div class="container py-4">
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+          <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">About Us</h1>
+            <p class="col-md-8 fs-4">Welcome to PC Hub, where technology meets passion. Founded in 2024, our blog is dedicated to bringing you the latest insights, reviews, and tutorials on all things PC. Whether you’re a seasoned tech enthusiast or just starting your journey, we’re here to help you navigate the ever-evolving world of personal computing.</p>
+          </div>
+        </div>
+    
+        <div class="row align-items-md-stretch">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-bg-dark rounded-3">
+              <h1 class="display-5 fw-bold">Mission</h1>
+              <p class="col-md-8 fs-4">At PC Hub, our mission is to empower our readers with reliable, in-depth content that enhances their understanding of PC hardware, software, and gaming. We believe that technology should be accessible to everyone, and we strive to break down complex concepts into easy-to-understand articles that anyone can benefit from.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+              <h2>Join the Conversation</h2>
+              <p>PC-Hub isn’t just a blog—it’s a community of like-minded individuals who share a love for technology. We encourage you to join the conversation, share your thoughts, and learn from each other.</p>
+            </div>
+          </div>
+        </div>
+    
+<%- include("partials/footer.ejs") %>
