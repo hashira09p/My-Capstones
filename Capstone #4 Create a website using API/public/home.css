@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    background-color: rgb(180,215,254);
+    max-height: 100%;
+    
+}
+
+.main-container{   /*Eto need mo para makuha mo ang pinakamadaling responsiveness*/
+    max-width: 1536px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgb(180,215,254);
+
+}   
+
+.weather-update-container{
+    width: 1024px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 50px;
+    background-color: rgb(93,156,228);
+    box-shadow: 15px 15px 20px rgb(7, 96, 198);
+}
+
+.logo{
+    width: 5rem;
+    height: 5rem;
+    display: block;
+}
+
+.location-container{
+    display: inline;
+    position: relative;
+    width: 14.7rem;
+    top: -.1rem;
+    left: .9rem;
+}
+
+.place-and-date{
+    color: white;
+    display: inline-block;
+    font-size: .9rem;
+    font-family: "Lato", sans-serif;
+    position: relative;
+    top: -1rem;
+    left: .4rem;
+}
+
+.place-and-date span{
+    display: block;
+}
+
+.time{
+    display: inline-block;
+    position: relative;
+    top: -1rem;
+    left: 1rem;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 2.4rem;
+    
+    margin: 0;
+}
+
+.temp{
+    display: block;
+    max-width: 8rem;
+    font-size: 2.7rem;
+    font-family: "Lato", sans-serif;
+    color: white;
+    position: relative;
+    top: 4rem;
+    left: 2.4rem;
+}
+
+.type-of-weather{
+    text-align: center;
+    width: 8.7rem;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: 14.8rem;
+    left: 2.1rem;
+}
+
+.building-container{
+    width: 5rem;
+    height: 5rem;
+}
+
+.building{
+    width: 12rem;
+    height: 15rem;
+    border-bottom-left-radius: 100px;
+    position: absolute;
+    top: 19.7rem;
+    left: -1.4rem;
+}
+
+.weather-info{
+    width: 800px;
+    height: 551px; 
+    background-color: rgb(228,240,254);
+    position: absolute;
+    top: .5rem;
+    left: 347px;
+    border-radius: 50px;
+}
+
+.details-of-todays-weather{
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    display: grid;
+    grid-template-columns: 370px 370px;
+    grid-template-rows: 153px 153px 153px;
+    position: relative;
+    top: -.2rem;
+    row-gap: 2rem;
+    column-gap: 1rem;
+}   
+
+.details-of-todays-weather div{
+    background-color: white;
+    border-radius: 39px;
+}
+
+.forecast-today h1{
+    font-family: "Lato", sans-serif;
+    display: inline-block;
+    position: relative;
+    left: 1rem;
+    max-width: 2rem;
+}
+
+.icon{
+    display: inline;
+    width: 2.1rem;
+    height: 2rem;
+    position: relative;
+    left: 17rem;
+    z-index: 1;
+}
+
+.percent{
+    font-family: "Lato", sans-serif;
+    display: inline-block;
+    text-align: center;
+    width: 15rem;
+    position: relative;
+    top: 4rem;
+    left: -.3rem;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.uv-index h1{  /* inoverride ko ung uv-index dahil mahaba ang h1 nya */
+    font-family: "Lato", sans-serif;
+    display: inline-block;
+    position: relative;
+    left: 1rem;
+    max-width: 15rem;
+}
+
+.uv-index .icon{
+    display: inline;
+    width: 2.1rem;
+    height: 2rem;
+    position: relative;
+    left: 13rem;
+    z-index: 1;
+}
+
+.uv-index .percent{
+    font-family: "Lato", sans-serif;
+    position: relative;
+    display: inline-block;
+    top: -.4rem;
+    left: 4.5rem;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.max-temperature h1{  /* inoverride ko ung max Temperature dahil mahaba ang h1 nya */
+    font-family: "Lato", sans-serif;
+    display: inline-block;
+    position: relative;
+    left: 1rem;
+    max-width: 15rem;
+}
+
+.max-temperature .icon{
+    display: inline;
+    width: 2.1rem;
+    height: 2rem;
+    position: relative;
+    left: 7.5rem;
+    z-index: 1;
+}
+
+.max-temperature .percent{
+    font-family: "Lato", sans-serif;
+    position: relative;
+    display: inline-block;
+    top: -.4rem;
+    left: 4.5rem;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+
+.ChanceOfRain h1{     /* inoverride ko ung ChanceOfRain dahil mahaba ang h1 nya */
+    font-family: "Lato", sans-serif;
+    display: inline-block;
+    position: relative;
+    left: 1rem;
+    max-width: 8rem;
+}
+
+.ChanceOfRain .icon{
+    display: inline;
+    width: 2.1rem;
+    height: 2rem;
+    position: relative;
+    top: -1.5rem;
+    left: 11.5rem;
+    z-index: 1;
+}
+
+.ChanceOfRain .percent{
+    font-family: "Lato", sans-serif;
+    position: relative;
+    display: inline-block;
+    top: -2.2rem;
+    left: 4.7rem;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+
+@media (max-width: 1536px){
+    .main-container{
+        max-width: 1280px;
+    }
+}

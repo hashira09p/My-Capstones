@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    background-color: rgb(92,156,229);
+}
+
+.brand-container{
+    height: 8rem;
+}
+
+.main-container{   /*Eto need mo para makuha mo ang pinakamadaling responsiveness*/
+    max-width: 1536px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgb(92,156,229);
+    border: 1px solid red;
+}   
+
+.brand-logo{
+    width: 8rem;
+    height: 8rem;
+    margin-left: .7rem;
+}
+
+.brand-container h1{
+    font-family: "Pacifico", cursive;
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    top: -3.5rem;
+    left: -1rem;
+    text-shadow: 2px 2px 5px rgb(137, 194, 255);
+}
+
+.getting-latitude-form{
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 20px;
+    background-color: rgb(229,241,254);
+    height: 90vh; 
+    box-shadow: 15px 15px 20px rgb(7, 96, 198);
+}
+
+.instruction{
+    font-size: 1.45rem;
+    margin-left: 1.9rem;
+    font-family: "Lato", sans-serif;
+}
+
+label{
+    display: block;
+    margin-left: 2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+input{
+    margin-top: .5rem;
+    margin-left: 2rem;
+    height: 1.5rem;
+    width: 35rem;
+}
+
+input[type="submit"]{
+    height: 3rem;
+    width: 12rem;
+    font-size: 1rem;
+    margin-left: 13.5rem;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 5px rgb(137, 194, 255);
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1536px) {
+    .main-container {
+      max-width: 1280px;
+    }
+}

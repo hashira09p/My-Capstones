@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <section class="main-container">
+        
+        <div class="weather-update-container">
+            
+            <div class="location-container">
+                <img src="Images/weather.png" alt="" class="logo">
+
+                <div class="place-and-date">
+                    <span><%= location %></span>
+                    <span><%= countryDate %></span>
+                </div>
+                <span class="time"><%= countryTime %></span>
+                <span class="temp">
+                    <%= temperature %>℃
+                </span>
+                <span class="type-of-weather-container">
+                    <h1 class="type-of-weather"><%= weather %></h1>
+                </span>
+                <div class="building-container">
+                    <img src="Images/building.png" alt="" class="building">
+                </div>
+            </div>
+
+            
+
+            <div class="weather-info">
+                <div class="details-of-todays-weather">
+                    <div class="forecast-today">
+                        <h1>Humidity</h1>
+                        <img src="Images/waterDrop.png" alt="water Droplet" class="icon">
+                        <span class="percent"><%= humidityPercent %>%</span>
+                    </div>
+
+                    <div class="forecast-today">
+                        <h1>Wind</h1>
+                        <img src="Images/windIcon.png" alt="water Droplet" class="icon">
+                        <span class="percent"><%= wind_KPH %> km/h</span>
+                    </div>
+
+                    <div class="forecast-today">
+                        <h1>Precipitation</h1>
+                        <img src="Images/raining.png" alt="water Droplet" class="icon">
+                        <span class="percent"><%= Precipitation_mm %> mm</span>
+                    </div>
+
+                    <div class="forecast-today uv-index">
+                        <h1>UV Index</h1>
+                        <img src="Images/sunIcon.png" alt="water Droplet" class="icon">
+                        <span class="percent"><%= UV_index %></span>
+                    </div>
+
+                    <div class="forecast-today max-temperature">
+                        <h1>Max Temperature</h1>
+                        <img src="Images/temperature.png" alt="water Droplet" class="icon">
+                        <span class="percent"><%= maxTemperature %>℃</span>
+                    </div>
+
+                    <div class="forecast-today ChanceOfRain">
+                        <h1>Chance Of Rain</h1>
+                        <img src="Images/chanceOfRain.png" alt="water Droplet" class="icon">
+                        <span class="percent"><%= chanceOfRain %>%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
